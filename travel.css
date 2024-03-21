@@ -6,53 +6,116 @@
 
 header {
     width: 100%;
-    height: 240px;
+    height: 120px;
 }
 
 #title {
     display: flex;
     justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+}
+
+#title > h1 {
+    color: green;
 }
 
 #title > ul {
     list-style: none;
     display: flex;
 }
+
+#title > ul > li {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.header-nav {
+    background-color: yellowgreen;
+    height: 40px;
+    line-height: 40px;
+}
+
 .header-nav > ul {
     display: flex;
     list-style: none;
 }
 
-.main-container {
+.header-nav > ul > li {
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+#main-container {
+    width: 100%;
+    height: calc(100vh - 120px - 200px);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.best-place {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-left: 100px;
-    /* align-content: center; */
-    /* justify-content: center; */
+#main-container > div {
+    margin-right: 20px;
 }
 
-.recommandation {
-    width: 50%;
-    height: 100%;
-    padding: 20px;
-    margin-right: 100px;
+#main-container > div > img {
+    width: 320px;
+    height: 240px;
+}
+
+#main-container > div > p {
+    font-size: 12px;
 }
 
 footer {
     width: 100%;
-    height: 80px;
+    height: 200px;
+    /* background-color: yellow; */
 }
 
-main {
+#footer-more {
     width: 100%;
-    height: calc(100vh - 360px - 80px);
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-more > div > img {
+    width: 100px;
+    height: 140px;
+    margin-right: 20px;
+}
+
+.new-star {
+    position: relative;
+}
+
+.new-star > span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.seaside {
+    position: relative;
+}
+
+.seaside > span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: black;
+}
+
+.withdogs {
+    position: relative;
+}
+.withdogs > span {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
 }
