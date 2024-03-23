@@ -28,7 +28,7 @@ header {
 #title > ul > li {
     margin-right: 20px;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .header-nav {
@@ -44,7 +44,8 @@ header {
 
 .header-nav > ul > li {
     margin-right: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 #main-container {
