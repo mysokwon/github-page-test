@@ -52,13 +52,13 @@ header {
     width: 100%;
     height: calc(100vh - 120px - 200px);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
 }
-
+/* 
 #main-container > div {
     margin-right: 50px;
-}
+} */
 
 #main-container > div > img {
     width: 320px;
