@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:5501/task/google2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            #main-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: aliceblue;
+            }
+
+            #main-container-section {
+                width: 1000px;
+                height: 300px;
+                background-color: white;
+                padding: 20px;
+                border-radius: 5%;
+            }
+
+            .main-container-items {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            aside {
+                width: 400px;
+            }
+
+            aside > h1 {
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            aside > p {
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .main-container-items > section > input {
+                width: 400px;
+                height: 60px;
+                text-align: left;
+                line-height: 60px;
+                padding-left: 10px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            section > button {
+                color: blue;
+                font-size: 12px;
+                font-weight: bold;
+                border: 0;
+                background-color: transparent;
+            }
+
+            section > span {
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            footer {
+                text-align: right;
+                height: 100px;
+                line-height: 100px;
+            }
+
+            #main-bottom {
+                display: flex;
+                justify-content: space-between;
+            }
+            footer > .footer1 {
+                border: 0;
+                background-color: transparent;
+                font-weight: bold;
+                color: blue;
+                margin-right: 20px;
+            }
+            footer > .footer2 {
+                border: 0;
+                background-color: blue;
+                font-weight: bold;
+                color: white;
+            }
+
+            #main-bottom {
+                margin-top: 20px;
+                margin-left: 15px;
+            }
+
+            #main-bottom > select > option {
+                border: 0;
+            }
+            #main-bottom > ul > button {
+                border: 0;
+                background-color: aliceblue;
+                margin-right: 15px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div id="main-container">
+                <div id="main-container-section">
+                    <header>
+                        <img src="./google1_files/google-1762248_640.png" alt="" width="120px" height="60px">
+                    </header>
+                    <main class="main-container-items">
+                        <aside>
+                            <h1>Sign in</h1>
+                            <br>
+                            <p>Use your Google Account</p>
+                        </aside>
+                        <section>
+                            <input type="text" placeholder="email or phone">
+                            <br>
+                            <button type="button">Forget email?</button>
+                            <br>
+                            <br>
+                            <span>
+                                Not your computer? Use Guest mode to sign in
+                                privately.
+                            </span>
+                            <button type="button">Learn more</button>
+                        </section>
+                    </main>
+                    <footer>
+                        <button type="button" class="footer1">
+                            Creat account
+                        </button>
+                        <button type="button" onclick="alert" class="footer2">
+                            Next
+                        </button>
+                    </footer>
+                </div>
+                <div id="main-bottom">
+                    <select name="lang" id="lang">
+                        <option value="한국어">한국어</option>
+                        <option value="english">English</option>
+                        <option value="일본어">일본어</option>
+                        <option value="중국어">중국어</option>
+                        <option value="프랑스어">프랑스어</option>
+                    </select>
+                    <ul>
+                        <button type="button">Help</button>
+                        <button type="button">Privacy</button>
+                        <button type="button">Terms</button>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
